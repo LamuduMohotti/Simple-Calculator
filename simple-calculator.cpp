@@ -4,13 +4,15 @@ using namespace std;
 int add(int a, int b);
 int sub(int a, int b);
 int mul(int a, int b);
+int div(int a, int b);
 
 int main(){
 	
 	cout << "** Welcome to simple calculator **" << endl;
 	cout << "1.Add" << endl;
 	cout << "2.Substract" << endl;
-	cout << "3.Multiplication" << endl;
+	cout << "3.Multiply" << endl;
+	cout << "4.Divide" << endl;
 	
 		
 	int option;
@@ -42,6 +44,14 @@ int main(){
 			}
 			cout << "Answer is : " << mul(a[0],a[1]) << endl;
 			break;
+		
+		case 4:
+			printf("Enter two numbers to divide : ");
+			for(i=0;i<2;i++){
+				cin >> a[i];
+			}
+			cout << "Answer is : " << div(a[0],a[1]) << endl;
+			break;
 	}
 }
 
@@ -56,4 +66,8 @@ int sub(int a, int b){
 
 int mul(int a, int b){
 	return a * b;
+}
+
+int div(int a, int b){
+	return a / b;
 }
