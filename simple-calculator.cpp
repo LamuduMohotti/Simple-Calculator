@@ -14,7 +14,8 @@ int main(){
 	cout << "3.Multiply" << endl;
 	cout << "4.Divide" << endl;
 	cout << "5.Exit" << endl;
-		
+	cout << endl;
+	cout << "Enter an option : ";	
 		
 	int option;
 	cin >> option;
