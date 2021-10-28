@@ -1,5 +1,4 @@
 #include<iostream>
-#include <stdlib.h>
 using namespace std;
 
 int add(int a, int b);
@@ -14,7 +13,8 @@ int main(){
 	cout << "2.Substract" << endl;
 	cout << "3.Multiply" << endl;
 	cout << "4.Divide" << endl;
-	cout << "5.Exit" << endl;	
+	cout << "5.Exit" << endl;
+		
 		
 	int option;
 	cin >> option;
@@ -55,8 +55,11 @@ int main(){
 			break;
 		
 		case 5:
-			printf("Thank you");
-			exit();
+			printf("Bye");
+			return 0;
+
+		default:
+			printf("Invalid option");
 	}
 }
 
